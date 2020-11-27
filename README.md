@@ -1,5 +1,8 @@
-Role Name
+Nginx
 =========
+
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-bogolyandras.nginx-52085.svg?style=flat)](https://galaxy.ansible.com/bogolyandras/nginx)
+[![Build Status](https://travis-ci.com/bogolyandras/ansible-role-nginx.svg?branch=main)](https://travis-ci.com/bogolyandras/ansible-role-nginx)
 
 A brief description of the role goes here.
 
