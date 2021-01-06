@@ -1,0 +1,5 @@
+# roles/example/tasks/debian.yml
+- name: Install nginx server for Debian
+  ansible.builtin.apt:
+    name: nginx
+    state: present

@@ -1,0 +1,14 @@
+# roles/example/tasks/redhat-7.yml
+- name: Add nginx repository for RHEL 7
+  yum_repository:
+    name: nginx-stable
+    file: nginx
+    description: Nginx stable repository
+    baseurl: http://nginx.org/packages/centos/$releasever/$basearch/
+    gpgcheck: true
+    gpgkey: https://nginx.org/keys/nginx_signing.key
+
+- name: Install nginx server for RHEL
+  ansible.builtin.yum:
+    name: nginx
+    state: present

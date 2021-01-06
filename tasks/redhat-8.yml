@@ -1,0 +1,6 @@
+# roles/example/tasks/redhat-8.yml
+
+- name: Install nginx 1.18 server for RHEL 8
+  ansible.builtin.dnf:
+    name: '@nginx:1.18'
+    state: present
